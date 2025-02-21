@@ -3,4 +3,5 @@ Problem: Write a program that generates a random N×N grid (N between 4 and 7) w
 Output1:
 ![Output](ScreenShot/Output1.png)
 
+Output2:
 ![Output](ScreenShot/Output2.png)
