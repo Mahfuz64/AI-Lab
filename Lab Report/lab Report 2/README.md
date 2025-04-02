@@ -6,4 +6,4 @@ Output1:
 ![Output](ScreenShot/Output 1.png)
 
 Output2:
-![Output](ScreenShot/Output 2.png)
+![Output](ScreenShot/Output%2.png)
