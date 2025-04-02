@@ -3,7 +3,7 @@ You are given a 2D grid representing a maze, where each cell is either an empty 
 
 
 Output1:
-![Output](ScreenShot/Output1.png)
+![Output](ScreenShot/Output 1.png)
 
 Output2:
-![Output](ScreenShot/Output2.png)
+![Output](ScreenShot/Output 2.png)
