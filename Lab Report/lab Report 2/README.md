@@ -3,6 +3,6 @@ You are given a 2D grid representing a maze, where each cell is either an empty 
 
 
 Output1:
-[![Output](ScreenShot/[Output 1.png](https://github.com/Mahfuz64/AI-Lab/blob/main/Lab%20Report/lab%20Report%202/Screenshot/Output%201.png))]
+[![Output](ScreenShot/[AI-Lab/blob/main/Lab%20Report/lab%20Report%202/Screenshot/Output%201.png]
 Output2:
 ![Output]([ScreenShot/Output%2.png](https://github.com/Mahfuz64/AI-Lab/blob/main/Lab%20Report/lab%20Report%202/Screenshot/Output%202.png))
