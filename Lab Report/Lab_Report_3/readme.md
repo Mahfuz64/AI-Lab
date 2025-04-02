@@ -3,7 +3,7 @@ You are given an undirected graph with N vertices and M edges. Your task is to i
 
 
 Output1:
-![Output](ScreenShot/Output1.png)
+![Output](ScreenShot/output1.png)
 
 Output2:
-![Output](ScreenShot/Output2.png)
+![Output](ScreenShot/output2.png)
