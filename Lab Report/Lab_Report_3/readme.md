@@ -3,7 +3,8 @@ You are given an undirected graph with N vertices and M edges. Your task is to i
 
 
 Output1:
-![Output](AI-Lab/blob/main/Lab%20Report/Lab_Report_3/Screenshot/Output1.png)
+![Output]([AI-Lab/blob/main/Lab%20Report/Lab_Report_3/Screenshot/Output1.png](https://github.com/Mahfuz64/AI-Lab/blob/main/Lab%20Report/Lab_Report_3/Screenshot/Output1.png))
+![Output]()
 
 Output2:
 ![Output](ScreenShot/output2.png)
