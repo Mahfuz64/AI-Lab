@@ -31,11 +31,9 @@ for row in [3, 7, 11]:
     for col in range(GRID_WIDTH):
         road_map[row][col] = 1
 
-# Convert grid to pixel
 def grid_to_pixel(row, col):
     return col * CELL_SIZE, row * CELL_SIZE
 
-# Car class
 class Car:
     def __init__(self, path, color):
         self.path = path
@@ -63,11 +61,9 @@ class Car:
     def draw(self):
         pygame.draw.rect(screen, self.color, (self.x + 5, self.y + 5, CELL_SIZE - 10, CELL_SIZE - 10))
 
-# Get all road cells
 def get_road_cells():
     return [(r, c) for r in range(GRID_HEIGHT) for c in range(GRID_WIDTH) if road_map[r][c] == 1]
 
-# Check if straight line path is valid
 def get_straight_path(start, end):
     r1, c1 = start
     r2, c2 = end
@@ -87,19 +83,19 @@ def get_straight_path(start, end):
             path.append((r, c1))
     return path
 
-# Car list and spawn timer
+
 cars = []
-SPAWN_INTERVAL = 2000  # in ms
+SPAWN_INTERVAL = 2000
 last_spawn_time = pygame.time.get_ticks()
 
-# Clock
+
 clock = pygame.time.Clock()
 running = True
 
 while running:
     screen.fill(BG_COLOR)
 
-    # Draw map
+   
     for row in range(GRID_HEIGHT):
         for col in range(GRID_WIDTH):
             rect = pygame.Rect(col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE)
@@ -109,7 +105,6 @@ while running:
                 pygame.draw.rect(screen, WHITE, rect)
             pygame.draw.rect(screen, (200, 200, 200), rect, 1)
 
-    # Spawn new car
     current_time = pygame.time.get_ticks()
     if current_time - last_spawn_time > SPAWN_INTERVAL:
         road_cells = get_road_cells()
@@ -124,7 +119,7 @@ while running:
             cars.append(Car(path, color))
             last_spawn_time = current_time
 
-    # Update and draw cars
+   
     for car in cars:
         car.move()
         car.draw()
@@ -132,7 +127,7 @@ while running:
     pygame.display.flip()
     clock.tick(60)
 
-    # Quit event
+    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
