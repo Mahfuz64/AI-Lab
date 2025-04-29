@@ -9,28 +9,30 @@ class GA:
         self.pos=None
         self.start()
     def start(self):
-       while self.gen<=self.max_gen and self.found is False:
+       while self.gen<=self.max_gen:
         
         self.population=[[random.randint(0,9)for j in range(self.k)]for i in range(20)]
        
         self.fitness=[self.score(self.population[i])for i in range(20)]
         self.difference=[self.diff(self.fitness[i])for i in range(20)]
+        print(self.difference)
         
         for i in range(len(self.difference)):
            if self.difference[i]==0:
               self.pos=i
               self.found=True
               break
-           else:
-             self.gen+=1
-             self.max=self.maxdif(self.difference)
-             self.secondmax=self.smax(self.max,self.difference)
-             self.low=self.low_diff(self.difference)
-             self.sloo=self.sl(self.low,self.difference)
-             self.cross(self.population[self.low],self.population[self.sloo],self.k)
+        if self.found:
              break
+        else:
+         self.gen+=1
+         self.max=self.maxdif(self.difference)
+         self.secondmax=self.smax(self.max,self.difference)
+         self.low=self.low_diff(self.difference)
+         self.sloo=self.sl(self.low,self.difference)
+         self.cross(self.population[self.low],self.population[self.sloo],self.k)
        if self.found:
-          print("combination found in after",self.gen,"iteration and that list is",self.population[self.pos])
+          print("combination found in after",self.gen,"iteration and individual",self.pos+1," is and that list is",self.population[self.pos])
        else:
           print("Not found in iteration")
        
