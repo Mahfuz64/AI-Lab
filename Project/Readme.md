@@ -28,6 +28,12 @@ A Python-based traffic simulation system that models vehicle behaviors, intellig
 
 1. pygame, numpy
 
+## Project Output
+ **Starting time**
 ![Screenshot](Screenshot/Starting.jpg)
+**After Sometime**
+![Screenshot](Screenshot/Aftersometime.jpg)
+**Path finding**
+![Screenshot](Screenshot/pathfinding.jpg)
  
   
